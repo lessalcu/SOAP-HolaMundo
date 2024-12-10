@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAP Client</title>
+</head>
+
+<body>
+    <h1>SOAP Client</h1>
+    <form id="soapForm">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Send SOAP Request</button>
+    </form>
+    <h2>Response:</h2>
+    <pre id="response"></pre>
+
+    <script>
+        const soapForm = document.getElementById('soapForm');
+        const responseElement = document.getElementById('response');
+
+        soapForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+
+            const soapRequest = `
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://localhost/">
+        <soapenv:Header/>
+        <soapenv:Body>
+            <SayHello>${name}</SayHello>
+        </soapenv:Body>
+    </soapenv:Envelope>
+`;
+
+            try {
+                const response = await fetch('/HelloWorld', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'text/xml',
+                    },
+                    body: soapRequest,
+                });
+
+                const responseText = await response.text();
+                responseElement.textContent = responseText;
+            } catch (error) {
+                responseElement.textContent = 'Error: ' + error.message;
+            }
+        });
+    </script>
+</body>
+
+</html>

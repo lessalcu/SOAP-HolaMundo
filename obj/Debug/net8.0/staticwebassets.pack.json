@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\DOCUMENTOS C\\SALOME\\UCE\\Semestre 8\\PROGRAMACION DISTRIBUIDA\\ESTILOS DE ARQUITECTURA\\SOAP-HolaMundo\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SOAPHolaMundo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SOAPHolaMundo.props",
+      "PackagePath": "build\\SOAPHolaMundo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SOAPHolaMundo.props",
+      "PackagePath": "buildMultiTargeting\\SOAPHolaMundo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SOAPHolaMundo.props",
+      "PackagePath": "buildTransitive\\SOAPHolaMundo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

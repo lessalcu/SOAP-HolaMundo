@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jHqYK90Lsfxt5lJVUwuI63DslhP2dUkyw0Hxr105Wc0=",
+  "Source": "SOAP-HolaMundo",
+  "BasePath": "_content/SOAP-HolaMundo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
